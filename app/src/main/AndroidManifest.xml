@@ -16,7 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".WarStory" />
-        <activity android:name=".InputWarStory"></activity>
+        <activity android:name=".InputWarStory" />
+        <activity android:name=".InputGreetingsStory" />
+        <activity android:name=".GreetingsStory"></activity>
     </application>
 
 </manifest>

@@ -19,9 +19,20 @@ public class WarStory extends AppCompatActivity {
         Intent intent = getIntent();
         String noun1 = intent.getStringExtra("noun1");
         String noun2 = intent.getStringExtra("noun2");
+        String noun3 = intent.getStringExtra("noun3");
+        String occupation = intent.getStringExtra("occupation");
+        String verb = intent.getStringExtra("verb");
+        String place = intent.getStringExtra("place");
+        String pastVerb = intent.getStringExtra("pastVerb");
+        String noun4 = intent.getStringExtra("noun4");
+        String gerund = intent.getStringExtra("gerund");
+        String nounPlural = intent.getStringExtra("nounPlural");
+        String noun5 = intent.getStringExtra("noun5");
+        String emotion = intent.getStringExtra("emotion");
+
         Resources storyRes = getResources();
 
-        String warStoryStr = String.format(storyRes.getString(R.string.ml_war), noun1, noun2, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        String warStoryStr = String.format(storyRes.getString(R.string.ml_war), noun1, noun2, noun3, occupation, verb, place, pastVerb, noun4, gerund, nounPlural, noun5, emotion);
         warStory.setText(warStoryStr);
     }
 }
