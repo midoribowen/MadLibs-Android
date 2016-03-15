@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class GreetingsStory extends AppCompatActivity {
     private TextView greetingsStory;
 
@@ -17,10 +19,10 @@ public class GreetingsStory extends AppCompatActivity {
         greetingsStory = (TextView) findViewById(R.id.greetingsStory);
 
         Intent intent = getIntent();
-        String[] greetingsStoryInputs = intent.getStringArrayExtra("greetingsStoryInput");
+        ArrayList<String> greetingsStoryInputs = intent.getStringArrayListExtra("greetingsStoryInput");
         Resources storyRes = getResources();
 
-        String greetingsStr = String.format(storyRes.getString(R.string.ml_greetings), greetingsStoryInputs[0], greetingsStoryInputs[1], greetingsStoryInputs[2], greetingsStoryInputs[3], greetingsStoryInputs[4], greetingsStoryInputs[5]);
+        String greetingsStr = String.format(storyRes.getString(R.string.ml_greetings), greetingsStoryInputs.get(0), greetingsStoryInputs.get(1), greetingsStoryInputs.get(2), greetingsStoryInputs.get(3), greetingsStoryInputs.get(4), greetingsStoryInputs.get(5));
         greetingsStory.setText(greetingsStr);
     }
 }

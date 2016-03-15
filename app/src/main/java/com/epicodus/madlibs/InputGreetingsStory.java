@@ -49,12 +49,12 @@ public class InputGreetingsStory extends AppCompatActivity {
                 greetingsStoryInput.add(verbStr);
                 greetingsStoryInput.add(nounStr);
 
-                String[] wheel = new String[greetingsStoryInput.size()];
-                greetingsStoryInput.toArray(wheel);
+//                String[] wheel = new String[greetingsStoryInput.size()];
+//                greetingsStoryInput.toArray(wheel);
 
 
                 Intent intent = new Intent(InputGreetingsStory.this, GreetingsStory.class);
-                intent.putExtra("greetingsStoryInput", wheel);
+                intent.putStringArrayListExtra("greetingsStoryInput", greetingsStoryInput);
 
                 startActivity(intent);
             }
