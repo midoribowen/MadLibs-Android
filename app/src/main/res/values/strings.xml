@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Mad Libs</string>
+    <string name="ml_war">It was during the battle of %1$s when I was running through a %2$s when a %3$s went off right next to my platoon. Our %4$s yelled for us to %5$s to the nearest %6$s we could find. When we got to the %6$s we %7$s to start a fire. As we were starting the fire the enemy saw the %8$s from the fire and started %9$s %10$s at us. we all quickly ducked behind the %11$s at the %6$s and returned fire. we quickly eliminated the enemy and were %12$s that we had won the battle.</string>
 </resources>
