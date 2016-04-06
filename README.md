@@ -1,6 +1,6 @@
 # MadLibs-Android
 
-#### A MadLibs App written using Android Studio and Java, Thursday March 17th, 2016
+#### A MadLibs App written using Android Studio and Java, Tuesday March 15th, 2016
 
 #### By Midori Bowen & Illia Kuchko
 
